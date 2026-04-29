@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Solana / Anchor sensitive local keypairs
+**/*keypair.json
+anchor/devnet-payer.json
+id.json
+
+# Anchor local runtime state
+.anchor/
+anchor/.anchor/
+
+# Build outputs
+dist/
+build/
+target/
+anchor/target/
+frontend/dist/
+backend/dist/
+
+# Logs and runtime output
+*.log
+*.out.log
+*.err.log
+backend/detached.out.log
+backend/dev-server.out.log
+backend/dev-server.err.log
+frontend/dev-server.out.log
+frontend/dev-server.err.log
+
+# TypeScript incremental cache
+*.tsbuildinfo
+
+# Browser/debug profiles and temporary downloads
+chrome-debug-profile*/
+downloads/
+uploads/
+workspace-*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

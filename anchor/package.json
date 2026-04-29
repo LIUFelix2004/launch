@@ -1,0 +1,17 @@
+{
+  "name": "rise-launchpad-anchor-tests",
+  "private": true,
+  "scripts": {
+    "deploy:devnet": "bash scripts/devnet-deploy.sh",
+    "proxy:devnet": "node scripts/proxy-relay.js",
+    "verify:devnet": "node scripts/devnet-verify.js",
+    "e2e:devnet": "node scripts/devnet-concurrent-e2e.js",
+    "test:integration": "bash scripts/localnet-integration.sh",
+    "test:localnet": "node tests/rise_launchpad.localnet.js"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "0.32.1",
+    "@solana/spl-token": "0.4.14",
+    "@solana/web3.js": "1.98.4"
+  }
+}

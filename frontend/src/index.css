@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: "Manrope", "Noto Sans SC", sans-serif;
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    border-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: #0a0b11;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background:
+      radial-gradient(circle at top, rgba(240, 185, 11, 0.10), transparent 24%),
+      #0a0b11;
+    color: #f4f6fb;
+    font-family: "Manrope", "Noto Sans SC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  ::selection {
+    background: rgba(240, 185, 11, 0.32);
+    color: #0a0b11;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f131d;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid #0f131d;
+    border-radius: 999px;
+    background: #2a3143;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #36405a;
+  }
+}

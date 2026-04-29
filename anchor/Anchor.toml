@@ -1,0 +1,25 @@
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+rise_launchpad = "AtH8XVVKMm51FKPhYgYkw4ZVXb2fb8nnXjNumyTP44fo"
+
+[programs.localnet]
+rise_launchpad = "AtH8XVVKMm51FKPhYgYkw4ZVXb2fb8nnXjNumyTP44fo"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[test]
+startup_wait = 20000
+
+[scripts]
+test = "npm run test:localnet"
