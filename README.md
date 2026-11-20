@@ -590,3 +590,13 @@ AtH8XVVKMm51FKPhYgYkw4ZVXb2fb8nnXjNumyTP44fo
 ```text
 仅用于 Devnet 功能验证、前后端联调、曲线机制验证和 E2E 压测。
 ```
+
+<!-- felix-ai-shop:start -->
+
+---
+
+### 🛒 Felix AI 工具小铺
+
+各种低价 AI 工具，稳定直供 → **[felixaitools.shop/](https://felixaitools.shop/)**
+
+<!-- felix-ai-shop:end -->
